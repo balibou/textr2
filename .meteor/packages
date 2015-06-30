@@ -11,3 +11,5 @@ useraccounts:bootstrap
 service-configuration
 twbs:bootstrap
 
+jquery
+fortawesome:fontawesome
