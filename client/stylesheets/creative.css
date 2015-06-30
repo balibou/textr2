@@ -478,3 +478,7 @@ body {
 #mainNav > div:nth-child(1) {
     background-color: #F05F40;
 }
+
+#page-top{
+    padding-top: 40px;
+}
