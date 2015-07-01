@@ -1,7 +1,8 @@
 <template name="user">
   <div class="container">   
     <div class="text-center">
-      <h1>Bienvenue sur votre profile !</h1>
+      <h3>Bienvenue sur votre profil !</h3>
+      {{> quickForm collection="Meteor.users" doc=user id="user-profile-form" type="update" omitFields="emails,createdAt, services, status,username" template="bootstrap3-horizontal" label-class="hidden" input-col-class="col-sm-offset-4 col-sm-4"}}
     </div>
   </div>
 </template>
