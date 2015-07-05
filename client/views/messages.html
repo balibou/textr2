@@ -2,7 +2,7 @@
   <div class="message-history">
     {{#each msgs}}
       <div class="message">
-        <a href="" class="message_profile-pic"></a>
+        <a href="" class="{{activeIfProfileIs}}"></a>
         <a href="" class="message_username">{{name}}</a>
         <span class="message_timestamp"><span data-livestamp="{{createdAt}}"></span></span>
         <span class="message_star"></span>

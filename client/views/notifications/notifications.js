@@ -10,7 +10,7 @@ Template.notifications.onCreated(function () {
     query.observeChanges({
       added: function(id, notification) {
         var notification = new Notification('Notification', {
-          icon: '',
+          icon: 'img/logo.png',
           body: "Vous avez un nouveau message !"
         });
       }

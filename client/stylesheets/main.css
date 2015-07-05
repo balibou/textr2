@@ -500,3 +500,29 @@ body {
     margin-left: 15px;
     font-weight: bold;
 }
+
+.message_profile-pic2 {
+  position: absolute;
+  left: 0;
+  display: block;
+  -moz-border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+  width: 36px;
+  height: 36px;
+  background-image: url("http://www.pubaction.fr/img/references/citroen.png");
+  background-size: cover;
+}
+
+.message_profile-pic3 {
+  position: absolute;
+  left: 0;
+  display: block;
+  -moz-border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+  width: 36px;
+  height: 36px;
+  background-image: url("img/profilepic.jpeg");
+  background-size: cover;
+}

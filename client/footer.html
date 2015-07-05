@@ -10,11 +10,13 @@
     </div>
   {{else}}
     {{#if activeIfTemplateIs 'Chat'}}
-      <div class="footer">
-      <div class="user-menu">
-        <span class="user-menu_username"><a href="{{pathFor 'user'}}">Profil</a></span>
-      </div>
-    </div>
+      {{#if currentUser}}
+        <div class="footer">
+          <div class="user-menu">
+            <span class="user-menu_username"><a href="{{pathFor 'user'}}">Profil</a></span>
+          </div>
+        </div>
+      {{/if}}
     {{else}}
       {{#if activeIfTemplateIs 'Chatroom'}}
       <div class="footer">
