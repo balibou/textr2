@@ -1,0 +1,16 @@
+<template name="sidebar">
+  <div class="listings">
+    <div class="listings_channels">
+      <h2 class="listings_header">Utilisateurs en ligne</h2>
+      <ul class="channel_list">
+        {{#each onlusr}}
+          {{> channel}}
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</template>
+
+<template name="channel">
+  <li class="user"><a href="">{{username}} {{> notifications}}</a></li>
+</template>

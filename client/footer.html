@@ -1,10 +1,29 @@
 <template name="footer">
-  <div id="footer">
-    <div class="container">
-      <hr>
-        <p>
-          © Textr 2015
-        </p>
+  {{#if activeIfTemplateIs 'Home'}}
+    <div id="footer">
+        <div class="container">
+          <hr>
+            <p>
+              © Textr 2015
+            </p>
+        </div>
     </div>
-  </div>
+  {{else}}
+    {{#if activeIfTemplateIs 'Chat'}}
+      <div class="footer">
+      <div class="user-menu">
+        <span class="user-menu_username"><a href="{{pathFor 'user'}}">Profil</a></span>
+      </div>
+    </div>
+    {{else}}
+      {{#if activeIfTemplateIs 'Chatroom'}}
+      <div class="footer">
+      <div class="user-menu">
+        <span class="user-menu_username"><a href="{{pathFor 'user'}}">Profil</a></span>
+      </div>
+      {{> input }}
+    </div>
+      {{/if}}
+    {{/if}}
+  {{/if}}
 </template>
