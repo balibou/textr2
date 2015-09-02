@@ -25,3 +25,4 @@ sacha:spin
 yogiben:autoform-file
 cfs:standard-packages
 cfs:gridfs
+peerlibrary:blaze-components
